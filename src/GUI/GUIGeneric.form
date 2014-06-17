@@ -28,8 +28,8 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="CommandTextField" pref="456" max="32767" attributes="0"/>
-                      <Component id="jScrollPane2" pref="456" max="32767" attributes="0"/>
+                      <Component id="CommandTextField" pref="404" max="32767" attributes="0"/>
+                      <Component id="jScrollPane2" pref="404" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="AttributePanel" max="32767" attributes="0"/>
@@ -59,15 +59,16 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="SaveOutputTextField" max="32767" attributes="0"/>
-                  <Component id="WorkDirectoryTextField" alignment="0" max="32767" attributes="0"/>
+                  <Component id="WorkDirectoryTextField" alignment="0" pref="228" max="32767" attributes="0"/>
                   <Component id="IntervalTextField" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="SaveOutputCheckBox" min="-2" max="-2" attributes="0"/>
                           <Component id="WorkDirectoryCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="IntervalCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="KillButton" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="0" pref="46" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -86,6 +87,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="IntervalTextField" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
+                      <Component id="KillButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -101,6 +104,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="SaveOutputTextField">
               <Properties>
+                <Property name="text" type="java.lang.String" value="somePath (not working yet)"/>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
@@ -114,6 +118,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="WorkDirectoryTextField">
               <Properties>
+                <Property name="text" type="java.lang.String" value="/home/rootkid/john-1.7.9-jumbo-7/run"/>
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
@@ -129,6 +134,11 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="5"/>
                 <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="KillButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Order 66"/>
               </Properties>
             </Component>
           </SubComponents>

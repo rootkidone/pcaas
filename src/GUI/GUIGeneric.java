@@ -72,6 +72,7 @@ public class GUIGeneric extends javax.swing.JPanel {
         WorkDirectoryTextField = new javax.swing.JTextField();
         IntervalCheckBox = new javax.swing.JCheckBox();
         IntervalTextField = new javax.swing.JTextField();
+        KillButton = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         OutputList = new javax.swing.JList();
 
@@ -90,6 +91,7 @@ public class GUIGeneric extends javax.swing.JPanel {
             }
         });
 
+        SaveOutputTextField.setText("somePath (not working yet)");
         SaveOutputTextField.setEnabled(false);
 
         WorkDirectoryCheckBox.setText("Work Directory");
@@ -99,6 +101,7 @@ public class GUIGeneric extends javax.swing.JPanel {
             }
         });
 
+        WorkDirectoryTextField.setText("/home/rootkid/john-1.7.9-jumbo-7/run");
         WorkDirectoryTextField.setEnabled(false);
 
         IntervalCheckBox.setText("Interval (sec)");
@@ -111,19 +114,22 @@ public class GUIGeneric extends javax.swing.JPanel {
         IntervalTextField.setText("5");
         IntervalTextField.setEnabled(false);
 
+        KillButton.setText("Order 66");
+
         javax.swing.GroupLayout AttributePanelLayout = new javax.swing.GroupLayout(AttributePanel);
         AttributePanel.setLayout(AttributePanelLayout);
         AttributePanelLayout.setHorizontalGroup(
             AttributePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(SaveOutputTextField)
-            .addComponent(WorkDirectoryTextField)
+            .addComponent(WorkDirectoryTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
             .addComponent(IntervalTextField)
             .addGroup(AttributePanelLayout.createSequentialGroup()
                 .addGroup(AttributePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(SaveOutputCheckBox)
                     .addComponent(WorkDirectoryCheckBox)
-                    .addComponent(IntervalCheckBox))
-                .addGap(0, 46, Short.MAX_VALUE))
+                    .addComponent(IntervalCheckBox)
+                    .addComponent(KillButton, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         AttributePanelLayout.setVerticalGroup(
             AttributePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,7 +145,9 @@ public class GUIGeneric extends javax.swing.JPanel {
                 .addComponent(IntervalCheckBox)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(IntervalTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(KillButton)
+                .addContainerGap())
         );
 
         jScrollPane2.setViewportView(OutputList);
@@ -150,8 +158,8 @@ public class GUIGeneric extends javax.swing.JPanel {
             MainTabPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MainTabPanelLayout.createSequentialGroup()
                 .addGroup(MainTabPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(CommandTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 456, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 456, Short.MAX_VALUE))
+                    .addComponent(CommandTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AttributePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -219,6 +227,7 @@ public class GUIGeneric extends javax.swing.JPanel {
     private javax.swing.JTextField CommandTextField;
     private javax.swing.JCheckBox IntervalCheckBox;
     private javax.swing.JTextField IntervalTextField;
+    private javax.swing.JButton KillButton;
     private javax.swing.JPanel MainTabPanel;
     private javax.swing.JList OutputList;
     private javax.swing.JCheckBox SaveOutputCheckBox;
